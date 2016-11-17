@@ -1,0 +1,80 @@
+a {
+    color: #77cde3;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.page-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
+
+.site-spinner {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('assets/page-loader/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.nav-container {
+    min-height: 80px;
+    background-color: #ffffff;
+}
+
+.site-logo {
+    float: left;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    display: block;
+    padding: 24px 35px 23px;
+    z-index: 101;
+    color: #606060;
+}
+
+.menu-ham {
+    float: right;
+    text-align: center;
+    padding: 24px 35px 23px;
+    font-size: 24px;
+    color: #606060;
+}
+
+.my-carousel {
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.about-section {
+    margin-top: 70px;
+}
+
+.menu-ham-collapse {
+    display: none;
+}
+
+.slidingDiv {
+    height:300px;
+    background-color: #99CCFF;
+    border-bottom:5px solid #3399FF;
+    z-index: 10;
+}
+
+.show_hide {
+    display:none;
+}
