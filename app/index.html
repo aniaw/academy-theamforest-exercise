@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel=stylesheet href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css">
     <link href="main.css" rel="stylesheet">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -32,7 +33,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
             <div class="dropdown-inner current">
-                <ul class="main-menu">
+                <ul class="main-menu mar-bot-2">
                     <li><a href="#home" class="current">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#resume">Resume</a></li>
@@ -40,12 +41,20 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <span class="inline text-bold">Fallow Me</span>
+                <div class="social inline">
+                    <a href="" class="social-icon"><img src="assets/img/facebook.png"> </a>
+                    <a href="" class="social-icon"><img src="assets/img/twitter.png"> </a>
+                    <a href="" class="social-icon"><img src="assets/img/google-glass.png"> </a>
+                    <a href="" class="social-icon"><img src="assets/img/heart.png"> </a>
+                </div>
             </div>
         </div>
     </header>
 
 
-    <div class="row " id="home">
+    <div class="row home-section" id="home">
         <div id="carousel-example-generic" class="carousel fade" data-ride="carousel" data-interval="8000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -59,24 +68,60 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img class="img-responsive img-full" src="assets/img/carosel-main-01.jpg" alt="">
+                    <div class="slide-content pos-absolute">
+
+                        <div class="container">
+
+                            <h1 class="sp-bottom-0">Hi! I'm Danilo</h1>
+                            <h2>Designer &amp; Developer</h2>
+                            <a href="#about" class="banner-icon"><i class="mdi mdi-arrow-down"></i> </a>
+
+                        </div>
+                        <!-- end container -->
+
+                    </div>
                 </div>
                 <div class="item">
                     <img class="img-responsive img-full" src="assets/img/carosel-main-02.jpg" alt="">
+                    <div class="slide-content pos-absolute">
+
+                        <div class="container">
+
+                            <h1 class="sp-bottom-0">I Craft Digital Design</h1>
+                            <h2>&amp; Website</h2>
+                            <a href="#portfolio" class="banner-icon"><i class="mdi mdi-arrow-down"></i></a>
+
+                        </div>
+                        <!-- end container -->
+
+                    </div>
                 </div>
                 <div class="item">
                     <img class="img-responsive img-full" src="assets/img/carosel-main-03.jpg" alt="">
+                    <div class="slide-content pos-absolute">
+
+                        <div class="container">
+
+                            <h1 class="sp-bottom-0">Pixel Perfect Developement</h1>
+                            <h2>Lets Get Together</h2>
+                            <a href="#contact" class="banner-icon"><i class="mdi mdi-arrow-down"></i></a>
+
+                        </div>
+                        <!-- end container -->
+
+                    </div>
                 </div>
 
             </div>
 
             <!-- Controls -->
             <div class="carousel-nav">
-                <a class="left carousel-control" href="#carousel-example-generic"
-                                         data-slide="prev">
-                <span><img src="assets/img/ic_arrow_back_black_24px.svg"></span>
-            </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                    <span><img src="assets/img/ic_arrow_forward_black_24px.svg"></span>
+                <a class="left-nav" role="button" href="#carousel-example-generic"
+                   data-slide="prev">
+                    <span><img src="assets/img/arrow_left.png" width="50px" height="50px"></span>
+                </a>
+                <a class="right-nav" href="#carousel-example-generic" data-slide="next" role="button">
+                    <span><img src="assets/img/arrow_right.png" width="50px" height="50px"></span>
                 </a></div>
         </div>
     </div>

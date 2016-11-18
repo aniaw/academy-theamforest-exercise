@@ -11,6 +11,11 @@ $('.carousel').carousel({
     interval: 1000
 })
 
+
+document.getElementById("carousel-example-generic").addEventListener("click", function(event){
+    event.preventDefault()
+});
+
 function openNav() {
     document.getElementById("mySidenav").style.display = "block";
 }
@@ -35,7 +40,7 @@ $(function () {
             var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
+                'scrollTop': $target.offsetTop+2
             }, 500, 'swing', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
