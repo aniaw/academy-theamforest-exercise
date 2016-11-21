@@ -8,6 +8,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <title>Shin Onepage Personal Portfolio Preview - ThemeForest</title>
@@ -126,17 +127,216 @@
         </div>
     </div>
 
-    <div class="row">
-        <section class="about-section" id="about">
+    <section class="mar-top-5" id="about">
+        <div class="container">
+            <div class="title"><h1>About</h1></div>
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <h3>The Brand</h3>
+                    <p class="mar-bot-2">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.
+                    </p>
+                </div>
 
-        </section>
-    </div>
+                <div class="col-md-6 col-md-offset-1 col-xs-12">
+                    <h3>My Mission</h3>
+                    <div class="mission mar-bot-2">
+                        <div class="mission-picture">
+                            <img src="assets/img/team/04.jpg" class="img-circle mission-picture-avatar">
 
-    <div class="row">
-        <section class="resume-section" id="resume">
+                        </div>
 
-        </section>
-    </div>
+                        <blockquote class="mission-qoutation">
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                            consequatur, vel illum qui dolorem.
+                            <p class="author-quote">John Donalo, Founder Shin Ltd.</p>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr>
+        </div>
+    </section>
+
+    <section class="mar-top-3">
+        <div class="container">
+            <h3>My Team</h3>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="member">
+                        <div class="thumb">
+                            <img src="assets/img/team/01.jpg">
+                            <div class="social-box">
+                                <div class="social-box-inner">
+                                    <a href="" class="social-icon"><i class="mdi mdi-skype"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-dribbble"></i> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4 class="thumb-name mar-top-2">John Doe</h4>
+                        <p class="thumb-pos">co-founder, ceo</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="member">
+                        <div class="thumb">
+                            <img src="assets/img/team/02.jpg">
+                            <div class="social-box">
+                                <div class="social-box-inner">
+                                    <a href="" class="social-icon"><i class="mdi mdi-skype"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-dribbble"></i> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4 class="thumb-name mar-top-2">Murray Branda
+                        </h4>
+                        <p class="thumb-pos">mockup designer</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="member">
+                        <div class="thumb">
+                            <img src="assets/img/team/03.jpg">
+                            <div class="social-box">
+                                <div class="social-box-inner">
+                                    <a href="" class="social-icon"><i class="mdi mdi-skype"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-dribbble"></i> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4 class="thumb-name mar-top-2">Taylor White</h4>
+                        <p class="thumb-pos">psd to html</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="member">
+                        <div class="thumb">
+                            <img src="assets/img/team/04.jpg">
+                            <div class="social-box">
+                                <div class="social-box-inner">
+                                    <a href="" class="social-icon"><i class="mdi mdi-skype"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
+                                    <a href="" class="social-icon"><i class="mdi mdi-dribbble"></i> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h4 class="thumb-name mar-top-2">Davis Suasanna</h4>
+                        <p class="thumb-pos">html to wordpress</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="resume" class="mar-top-4">
+        <div class="container">
+            <h1 class="title">My Resume</h1>
+            <div class="row pd-top-1 pd-bottom-3">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h6>Dribble</h6>
+                    <h6>2014 - 2016</h6>
+                </div>
+                <div class="resume-right col-md-9 col-sm-8 col-xs-12">
+                    <h4>Art & Creative director</h4>
+
+                    <p>Art director is my current job and also my dream job, consectetur adipiscing elit, sed do ut
+                        eiusmode temporems rerum necessitatibus saepe ut aut reiciendis voluptatibus.</p>
+                </div>
+            </div>
+            <div class="row pd-top-1 pd-bottom-3">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h6>Google</h6>
+                    <h6>2011 - 2014</h6>
+                </div>
+                <div class="resume-right col-md-9 col-sm-8 col-xs-12">
+                    <h4>Front-end designer</h4>
+
+                    <p>Art director is my current job and also my dream job, consectetur adipiscing elit, sed do ut
+                        eiusmode temporems rerum necessitatibus saepe ut aut reiciendis voluptatibus.</p>
+                </div>
+            </div>
+            <div class="row pd-top-1 pd-bottom-3">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h6>Envato</h6>
+                    <h6>2009 - 2011</h6>
+                </div>
+                <div class="resume-right col-md-9 col-sm-8 col-xs-12">
+                    <h4>Web designer & Developer</h4>
+
+                    <p>Art director is my current job and also my dream job, consectetur adipiscing elit, sed do ut
+                        eiusmode temporems rerum necessitatibus saepe ut aut reiciendis voluptatibus.</p>
+                </div>
+            </div>
+            <div class="row pd-top-1 pd-bottom-3 last-resume">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h6>Behance</h6>
+                    <h6>2008 - 2009</h6>
+                </div>
+                <div class="resume-right col-md-9 col-sm-8 col-xs-12">
+                    <h4>Mid-level designer</h4>
+
+                    <p>Art director is my current job and also my dream job, consectetur adipiscing elit, sed do ut
+                        eiusmode temporems rerum necessitatibus saepe ut aut reiciendis voluptatibus.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+
+    <section id="skills" class="pd-top-2 pd-bottom-3">
+        <div class="container">
+            <h3>My Skills</h3>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="skillbar" >
+                        <h6 class="skillbar-title">Web Design</h6>
+                        <h6 class="skillbar-percent">70%</h6>
+                        <div class="skillbar-progress" data-percent="70%"><div class="skillbar-bar"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="skillbar" >
+                        <h6 class="skillbar-title">Web Development</h6>
+                        <h6 class="skillbar-percent">96%</h6>
+                        <div class="skillbar-progress" data-percent="96%"><div class="skillbar-bar"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="skillbar" >
+                        <h6 class="skillbar-title">Photography</h6>
+                        <h6 class="skillbar-percent">95%</h6>
+                        <div class="skillbar-progress" data-percent="95%"><div class="skillbar-bar"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="pd-top-2 pd-bottom-3">
+
+    </section>
 </div>
 
 </body>

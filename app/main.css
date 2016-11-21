@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:700|Work+Sans:300,400,500";
+
 body {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -88,6 +90,16 @@ h6 {
 
 p {
     margin: 0 0 24px
+}
+
+hr {
+    border-top: 1px solid #cccccc;
+    margin: 20px 0 20px ;
+}
+
+.title {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .site-spinner {
@@ -369,9 +381,214 @@ p {
     margin-top: 70px;
 }
 
-.resume-section {
-    margin-top: 50px;
+.mission {
+    display: table;
+    width: 100%;
 }
+
+.mission-picture {
+    display: table-cell;
+    padding-right: 24px;
+}
+
+.mission-picture-avatar {
+    width: 75px;
+}
+
+.mission-qoutation {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+.author-quote {
+    display: block;
+    color: #999;
+    font-size:14px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.author-quote:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    vertical-align: middle;
+    background-color: #999;
+    margin-right: 12px;
+}
+
+
+
+.resume-section {
+    margin-top: 30px;
+}
+
+.member {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.member .thumb {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb > img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.member .social-box {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #606060;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.social-box .social-icon {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.member:hover .thumb > img {
+    opacity: .5;
+}
+
+.member:hover .social-box {
+    opacity: .7;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.social-box .social-box-inner {
+    margin-top: 45%;
+}
+
+.member .thumb-name {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.member .thumb-pos {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #999
+}
+
+
+
+.resume-right:before {
+    content: '';
+    background-color: #999;
+    width: 2px;
+    height: calc(100% + 23px);
+    position: absolute;
+    top: 26px;
+    left: -20px;
+
+}
+
+.resume-right h4:before {
+    content: '\F134';
+    position: absolute;
+    top: 4px;
+    left: -30px;
+    font-family: 'Material Design Icons';
+    color: #999;
+}
+
+.last-resume  .resume-right:before {
+    height: calc(100% - 20px);
+}
+
+
+.skillbar {
+    margin-bottom: 22px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+}
+
+.skillbar-progress {
+    width: 100%;
+    height: 5px;
+    background-color: #ededed;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+
+
+}
+
+.skillbar-bar {
+    width: 0;
+    height: 100%;
+    background-color: #6e6e6e;
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -616,3 +833,63 @@ p {
 .mar-bot-2 {
     margin-bottom: 48px;
 }
+
+.mar-top-1 {
+    margin-top: 10px;
+}
+.mar-top-2 {
+    margin-top: 20px;
+}
+.mar-top-3 {
+    margin-top: 30px;
+}
+.mar-top-4 {
+    margin-top: 40px;
+}
+.mar-top-5 {
+    margin-top: 50px;
+}
+
+.pd-top-1 {
+    padding-top: 10px;
+}
+.pd-top-2 {
+    padding-top: 20px;
+}
+.pd-top-3 {
+    padding-top: 30px;
+}
+.pd-top-4 {
+    padding-top: 40px;
+}
+.pd-top-5 {
+    padding-top: 50px;
+}
+.pd-top-6 {
+    padding-top: 60px;
+}
+.pd-top-7 {
+    padding-top: 70px;
+}
+.pd-bottom-1 {
+    padding-bottom: 10px;
+}
+.pd-bottom-2 {
+    padding-bottom: 20px;
+}
+.pd-bottom-3 {
+    padding-bottom: 30px;
+}
+.pd-bottom-4 {
+    padding-bottom: 40px;
+}
+.pd-bottom-5 {
+    padding-bottom: 50px;
+}
+.pd-bottom-6 {
+    padding-bottom: 60px;
+}
+.pd-bottom-7 {
+    padding-bottom: 70px;
+}
+
