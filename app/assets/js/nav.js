@@ -19,8 +19,9 @@ $(document).ready(function () {
         var anchorId = $(this).attr('href');
 
         // Our scroll target : the top position of the section that has the id referenced by our href
-        if(anchorId.length)
-        var target = $(anchorId).offset().top;
+        if(anchorId.length) {
+            var target = $(anchorId).offset().top;
+        }
 
         $('html, body').stop().animate({scrollTop: target}, 500, function () {
             window.location.hash = anchorId;

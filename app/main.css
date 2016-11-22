@@ -631,6 +631,32 @@ hr {
 
 
 
+.owl-carousel .item img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+.btn-work {
+    height: 36px;
+    padding: 0 18px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #77EDE3;
+    border-color: #77ede3;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.btn-work:hover {
+    color: #fff;
+    background-color: #51bfdb;
+}
+
+
+
 
 
 @media screen and (max-height: 450px) {
