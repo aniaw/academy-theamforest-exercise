@@ -1,50 +1,6 @@
 /**
  * Created by student on 21.11.16.
  */
-/*$(document).ready(function () {
- $(document).on("scroll", onScroll);
-
- $('a[href^="#"]').on('click', function (e) {
- e.preventDefault();
- $(document).off("scroll");
-
- $('a').each(function () {
- $(this).removeClass('current');
- });
- $(this).addClass('current');
-
- var target = this.hash,
- menu = target;
- $target = $(target);
- $('html, body').stop().animate({
- 'scrollTop': $target.offset().top + 2
- }, 500, 'swing', function () {
- window.location.hash = target;
- $(document).on("scroll", onScroll);
-
- });
- });
-
-
- function onScroll(event) {
- var scrollPosition = $(document).scrollTop();
- $('nav li a').each(function () {
- var currentLink = $(this);
- var refElement = $(currentLink.attr("href"));
- console.log(refElement);
- if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
- $('.main-menu li a').removeClass("current");
- currentLink.addClass("current");
- }
- else {
- currentLink.removeClass("current");
- }
- });
- }
-
- });*/
-
-
 $(document).ready(function () {
 
 
@@ -57,14 +13,14 @@ $(document).ready(function () {
         //remove active from all anchor and add it to the clicked anchor
         $('#navi li a[href^="#"]').removeClass("current")
         $(this).addClass('current');
+        document.getElementById("mySidenav").style.display = "none";
 
         // The id of the section we want to go to
         var anchorId = $(this).attr('href');
 
         // Our scroll target : the top position of the section that has the id referenced by our href
         if(anchorId.length)
-        var target = $(anchorId).offset().top - offset;
-        console.log(target);
+        var target = $(anchorId).offset().top;
 
         $('html, body').stop().animate({scrollTop: target}, 500, function () {
             window.location.hash = anchorId;
@@ -83,7 +39,6 @@ $(document).ready(function () {
                 var target = $(anchorId).offset().top - offset;
             }
             // check if the document has crossed the page
-            console.log(position, target);
             if (position >= target) {
                 //remove active from all anchor and add it to the clicked anchor
                 $('#navi li a[href^="#"]').removeClass("current")
