@@ -1,29 +1,70 @@
 /**
  * Created by student on 17.11.16.
  */
-$(function () {
-    $(document).ready(function () {
-        $(".site-spinner").fadeOut("slow");
+
+$(document).ready(function () {
+
+    $(".site-spinner").fadeOut("slow", function () {
+        $(this).remove();
+    });
+
+    $("#owl-work").owlCarousel({
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 200,
+        paginationSpeed: 400,
+        singleItem: true,
+        autoPlay: true
+
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+
+    });
 
 
-        $("#owl-work").owlCarousel({
+    var contMasonry = $('.masonry');
 
-            navigation : false, // Show next and prev buttons
-            slideSpeed : 200,
-            paginationSpeed : 400,
-            singleItem:true,
-            autoPlay: true
+    contMasonry.imagesLoaded(function () {
+        contMasonry.isotope({
+            itemSelector: ".grid-item",
+            percentPosition: true,
+            masonry: {
+                columnWidth: 0,
+                gutter: 0
+            }
+        })
+    });
 
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
+    $('.filter').on('click', '.categories', function (event) {
 
+        event.preventDefault();
+        var filterObject = $(this).data("filter");
+        console.log(filterObject);
+        contMasonry.isotope({
+            filter: filterObject
         });
-    })
+
+        $('.filter a').removeClass('active');
+        $(this).closest('a').addClass('active');
+
+    });
+
+    $('#owl-quote').owlCarousel({
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 200,
+        paginationSpeed: 400,
+        singleItem: true,
+        autoPlay: true
+
+    });
+
+
 });
+
 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -57,7 +98,7 @@ $(function () {
 
 
 $('.carousel').carousel({
-    interval: 1000
+    interval: 8000
 });
 
 
@@ -72,5 +113,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.display = "none";
 }
+
 
 
