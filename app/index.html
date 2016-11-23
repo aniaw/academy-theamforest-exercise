@@ -542,9 +542,10 @@
     </section>
 
 
-
     <section id="maps" class="pd-top-7 pd-bottom-3">
-        <div class="container"></div>
+        <div class="google-map" id="googleMap">
+
+        </div>
     </section>
 
 
@@ -560,5 +561,24 @@
 <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
 <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/google-maps.js"></script>
+<!--<script>
+    function initMap(){
+        var center = { lat: 40.705979595714396, lng: -73.97800355000004};
+        var map = new google.maps.Map(document.getElementById("googleMap"), {
+            zoom: 5,
+            center: center
+        });
+
+        var marker = new google.maps.Marker({
+            position: center,
+            map: map
+        })
+    }
+</script>-->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs4GxNxj5_SDppX2QE20FXgVUtLFKUQpQ&callback=initMap">
+
+</script>
 </body>
 </html>
