@@ -8,6 +8,27 @@ $(document).ready(function () {
         $(this).remove();
     });
 
+
+    /*var change = $('.change');
+
+    change.each(function(){
+        var imgSrc = $(this).children().attr('src');
+        $(this).children("img").remove();
+        $(this).css('background-image', 'url("'+imgSrc+'")');
+    });*/
+
+
+    $('#owl-main').owlCarousel({
+        navigation: false, // Show next and prev buttons
+        singleItem: true,
+        lazyLoad: true,
+        loop: true,
+        transitionStyle : "fade"
+
+    });
+
+    $(".owl-carousel").owlCarousel();
+
     $("#owl-work").owlCarousel({
 
         navigation: false, // Show next and prev buttons
@@ -99,14 +120,10 @@ $(function () {
 });
 
 
-$('.carousel').carousel({
-    interval: 8000
-});
-
-
+/*
 document.getElementById("carousel-example-generic").addEventListener("click", function (event) {
     event.preventDefault()
-});
+});*/
 
 function openNav() {
     document.getElementById("mySidenav").style.display = "block";
