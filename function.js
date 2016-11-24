@@ -22,3 +22,25 @@ $(function () {
     });
 
 });
+
+$( document ).ready(function() {
+    /* activate jquery isotope */
+    var $container = $('#posts').isotope({
+        itemSelector : '.item',
+
+        percentPosition: true,
+        masonry: {
+            // use outer width of grid-sizer for columnWidth
+            columnWidth: '.item'
+        }
+    });
+
+    $container.isotope({ filter: '*' });
+    // filter items on button click
+    $('#filters').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+    });
+});
+
+

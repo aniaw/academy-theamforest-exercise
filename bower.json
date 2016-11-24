@@ -1,7 +1,9 @@
 {
-    "name": "theamforest-exercises",
-    "version": "0.0.0",
-    "dependencies": {
-        "bootstrap": "3.3.7"
-    }
+  "name": "theamforest-exercises",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "isotope": "^3.0.1",
+    "masonry": "^4.1.1"
+  }
 }

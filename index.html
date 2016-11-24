@@ -209,136 +209,99 @@
         <div class="container">
 
 
-            <div class="section-title col-md-6 col-xs-12">
-                <h2 style="color: #072def; font-size: 20px;">Portfolio</h2>
+            <div class="section-title col-md-6 col-xs-12 row">
+                <h2 class="row" style="color: #072def; font-size: 20px;">Portfolio</h2>
                 <span style=" background-color:#fff197; font-size: 50px;">My latest projects</span>
             </div>
 
-            <div class="masthead row" style="margin-bottom: 10px">
-                <div class="col-xs-12 col-md-6">
 
 
-                    <ul class="breadcrumb">
-                        <li class="active"><a href="#home" aria-controls="home" role="tab"
-                                              data-toggle="tab">All</a></li>
-                        <li><a href="#profile" aria-controls="profile" role="tab"
-                               data-toggle="tab">Illustration</a></li>
-
+            <div class="masthead" style="margin-bottom: 10px">
+                <div class="row">
+                    <ul id="filters" class="list-inline">
+                        <li class="easing" data-filter="*">All</li>
+                        <li class="easing" data-filter=".web">Illustration</li>
+                        <li class="easing" data-filter=".brand">Branding</li>
+                        <li class="easing" data-filter=".design">Branding</li>
                     </ul>
 
+                    <div class="row"></div>
 
+                    <div class="container-fluid no-gutter">
 
+                        <div id="posts" class="row">
+                            <div id="1" class="item brand ">
 
-                            <li role="presentation">
-                            </li>
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
-                                                       data-toggle="tab">Branding
-                            </a></li>
-                            <li role="presentation"><a href="#mani" aria-controls="mani" role="tab"
-                                                       data-toggle="tab">Design</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Example row of columns Polecane Okno 1 -->
-                <div class="tab-content list row" style="text-align: center; border-top: 10px; ">
-
-                    <div role="tabpanel" class="tab-pane fade in active" id="home">
-                        <div id="isotopeGrid" class="mGrid row">
-                            <div class="grid-item no-pad-grid item-five brand fs">
-
-
-                                <a class="image-modal col-md-7">
-                                    <img src="photos/picture1.png" alt="">
-                                    <div class="itemHover">
-                                        <h4>Stay Hungry Stay Foolish</h4>
-                                        <h6>Branding</h6>
-                                    </div>
-                                </a>
-
-
-                                <a class="image-modal col-md-7">
-                                    <img src="photos/picture2.png" alt="">
-                                    <div class="itemHover">
-                                        <h4>Pure Juice</h4>
-                                        <h6>Illustration</h6>
-                                    </div>
-                                </a>
-
-
-                                <a class="image-modal col-md-5">
-                                    <img src="photos/picture3.png" alt="">
-                                    <div class="itemHover">
-                                        <h4>Label Tag</h4>
-                                        <h6>Branding</h6>
-                                    </div>
-                                </a>
-
-
-                                <a class="image-modal col-md-5">
-                                    <img src="photos/picture4.png" alt="">
-                                    <div class="itemHover">
-                                        <h4>Paper Bag</h4>
-                                        <h6>Illustration</h6>
-                                    </div>
-                                </a>
-
-
-                                <a class="image-modal col-md-5">
-                                    <img src="photos/picture5.png" alt="">
-                                    <div class="itemHover">
-                                        <h4>Bag Mockup</h4>
-                                        <h6>Design</h6>
-                                    </div>
-                                </a>
-
+                                <div class="item-wrap">
+                                    <a class="image-modal">
+                                        <img src="photos/picture1.png" alt="">
+                                        <div class="itemHover">
+                                            <h4>Stay Hungry Stay Foolish</h4>
+                                            <h6>Branding</h6>
+                                        </div>
+                                    </a>
+                                </div>
 
                             </div>
-                        </div>
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane fade" id="profile">
-                        <div class="row">
-                            <div col-md-12>
-                                <div class="col-xs-6 col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="http://placehold.it/200x200" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="http://placehold.it/200x200" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="http://placehold.it/200x200" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="http://placehold.it/200x200" alt="...">
+                            <div id="2" class="item web brand" >
+                                <div class="item-wrap">
+                                    <a class="image-modal">
+                                        <img src="photos/picture3.png" alt="">
+                                        <div class="itemHover">
+                                            <h4>Pure Juice</h4>
+                                            <h6>Illustration</h6>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
+
+                            <div id="3" class="item web">
+                                <div class="item-wrap">
+                                    <a class="image-modal">
+                                        <img src="photos/picture4.png" alt="">
+                                        <div class="itemHover">
+                                            <h4>Label Tag</h4>
+                                            <h6>Branding</h6>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <div id="4" class="item brand">
+                                <div class="item-wrap">
+                                    <a class="image-modal">
+                                        <img src="photos/picture2.png" alt="">
+                                        <div class="itemHover">
+                                            <h4>Paper Bag</h4>
+                                            <h6>Illustration</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="5" class="item design">
+                                <div class="item-wrap">
+                                    <a class="image-modal">
+                                        <img src="photos/picture5.png" alt="">
+                                        <div class="itemHover">
+                                            <h4>Bag Mockup</h4>
+                                            <h6>Design</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="messages">
-                        dfdf
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="mani">
-                        dfdfdfsdfwe32232332
-                    </div>
+
                 </div>
 
 
             </div>
-
-
         </div>
-
-
     </section>
+
+
     <!-- section Journal
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -507,11 +470,14 @@
 
     </footer>
 
+
     <!--  Javascripts
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="function.js"></script>
     <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app/bower_components/isotope/dist/isotope.pkgd.js"></script>
+    <script src="app/bower_components/masonry/dist/masonry.pkgd.js"></script>
 
 </div>
 </body>
