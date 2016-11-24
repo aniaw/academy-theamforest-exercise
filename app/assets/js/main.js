@@ -9,33 +9,37 @@ $(document).ready(function () {
     });
 
 
-    /*var change = $('.change');
+    var change = $('.change');
 
     change.each(function(){
         var imgSrc = $(this).children().attr('src');
         $(this).children("img").remove();
         $(this).css('background-image', 'url("'+imgSrc+'")');
-    });*/
+    });
 
 
     $('#owl-main').owlCarousel({
-        navigation: false, // Show next and prev buttons
-        singleItem: true,
-        lazyLoad: true,
+        items: 1,
+        margin: 0,
+        dots: true,
         loop: true,
-        transitionStyle : "fade"
+        autoplay: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        navText: ['<span><img src="assets/img/arrow_left.png" width="50px" height="50px"></span>', '<span><img src="assets/img/arrow_right.png" width="50px" height="50px"></span>']
 
     });
 
-    $(".owl-carousel").owlCarousel();
 
     $("#owl-work").owlCarousel({
 
-        navigation: false, // Show next and prev buttons
-        slideSpeed: 200,
-        paginationSpeed: 400,
-        singleItem: true,
-        autoPlay: true
+        items: 1,
+        margin: 0,
+        nav: false,
+        dots: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 7000
 
         // "singleItem:true" is a shortcut for:
         // items : 1,
@@ -75,12 +79,13 @@ $(document).ready(function () {
     });
 
     $('#owl-quote').owlCarousel({
-        navigation: false, // Show next and prev buttons
-        slideSpeed: 200,
-        paginationSpeed: 400,
-        singleItem: true,
-        autoPlay: true,
-        autoPlay: 10000
+        items: 1,
+        margin: 0,
+        nav: false,
+        dots: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 8000
 
     });
 
