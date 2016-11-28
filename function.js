@@ -44,3 +44,17 @@ $( document ).ready(function() {
 });
 
 
+$(document).ready(function() {
+    $('.right21').on('mouseenter', function() {
+        $(this).addClass('highlight');
+        $(this).animate({'left': '20px', 'opacity': '1'}, 'fast');
+
+    });
+    $('.right21').on('mouseleave', function() {
+        $(this).addClass('highlight');
+        $(this).animate({'left': '0px', 'opacity': '1'}, 'fast');
+
+    });
+
+});
+
