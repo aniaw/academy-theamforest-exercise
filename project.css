@@ -4,27 +4,42 @@
     padding: 120px 0px;
     text-align: left;
 }
-.container-fluid1
-{
+
+.container-fluid1 {
     background: #fcfcfc;
-    padding:30px;
+    padding: 30px;
+}
+.section {
+    background: #fcfcfc;
+    min-height: 100px;
 }
 
+#sectionIntro {
+    padding-top: 200px;
+    background: url("photos/zdj profilowe.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-size:cover;
+    min-height: 642px;
+}
 
-.hederSpan{
+.hederSpan {
     color: #000;
     font-family: "Lora", serif;
     background-color: #fff197;
-    font-size: 26px;
+    font-size: 30px;
     letter-spacing: 1px;
     position: relative;
-    top:2px;
-    text-decoration:none;
+    top: 2px;
+    text-decoration: none;
 }
+
 #sectionPortfolio, #sectionContact, #sectionAbout {
     padding: 120px 0px;
     text-align: left;
 }
+
 .skillbar-progress {
     width: 100%;
     height: 5px;
@@ -242,10 +257,7 @@ input.submit {
     padding-bottom: 30px;
 }
 
-.margin {
-    margin: 0 2% 2% 2%;
 
-}
 
 .container-fluid.no-gutter {
     padding: 0px;
@@ -303,9 +315,7 @@ input.submit {
 
 /* responsive media queries */
 
-@media (max-width: 768px) {
 
-}
 
 .navbar li a {
     margin: 15px;
@@ -319,34 +329,32 @@ input.submit {
     color: #333;
     border: 1px solid transparent;
 }
+
 .navbar li a:hover {
     border-bottom: 2px solid #fff197;
     color: #072def;
 }
+
 .navbar li.active a {
     border-bottom: 2px solid #fff197;
     color: #072def;
 }
 
-
-
-.right21{
--moz-transition: top 0.2s;
--o-transition: top 0.2s;
--webkit-transition: top 0.2s;
-transition: top 0.2s;
+.right21 {
+    -moz-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    -webkit-transition: top 0.2s;
+    transition: top 0.2s;
 }
-
 
 .highlighted {
     top: -10px;
 }
 
-
 .right21 {
     padding: 80px 0px 20px 0px;
     border-bottom: 2px solid #dcdcdc;
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
 
 }
@@ -358,9 +366,35 @@ transition: top 0.2s;
 .right21:active {
     border-bottom: 2px solid #fff197;
 }
+.margin {
+    margin: 0 2% 2% 2%;
 
+}
+@media (max-width: 768px) {
+    .item {
+        border: none;
+        width: 100%;
+        padding: 0 14px 14px 0;
 
+    }
+    .margin {
+        margin: 0;
+    }
+    #sectionIntro{
+        padding: 0px 0px;
+    }
+}
 
+ul.listforgallery li {
+    display: inline-block;
 
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-weight: 400;;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+}
 
 
