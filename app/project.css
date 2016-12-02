@@ -1,14 +1,6 @@
 
-#sectionIntro, #sectionJournal, #sectionResume {
-    background: #fcfcfc;
-    padding: 120px 0px;
-    text-align: left;
-}
 
-.container-fluid1 {
-    background: #fcfcfc;
-    padding: 30px;
-}
+
 .section {
     background: #fcfcfc;
     min-height: 100px;
@@ -20,10 +12,37 @@
     background-position: bottom left;
     background-repeat: no-repeat;
     height: 150px;
-    background-size:cover;
+    background-size: cover;
     min-height: 642px;
 }
 
+
+
+#sectionPortfolio, #sectionContact, #sectionAbout {
+    padding: 120px 0px;
+    text-align: left;
+}
+
+#sectionIntro, #sectionJournal, #sectionResume {
+    background: #fcfcfc;
+    padding: 120px 0px;
+    text-align: left;
+}
+
+.container-fluid1 {
+    background: #fcfcfc;
+    padding: 30px;
+}
+.navul{
+    list-style: none;
+    float:right;
+}
+.navbarcolor {
+    background-color: rgba(255, 255, 255, 1);
+}
+.borderd {
+    margin-top:  70px;
+}
 .hederSpan {
     color: #000;
     font-family: "Lora", serif;
@@ -34,6 +53,131 @@
     top: 2px;
     text-decoration: none;
 }
+
+.navbar li a {
+    margin: 15px;
+    text-decoration: none;
+    line-height: 55px;
+    padding-bottom: 0px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    border: 1px solid transparent;
+}
+
+.navbar li a:hover {
+    border-bottom: 2px solid #fff197;
+    color: #072def;
+}
+
+.navbar li.active a {
+    border-bottom: 2px solid #fff197;
+    color: #072def;
+}
+
+.right21 {
+    -moz-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    -webkit-transition: top 0.2s;
+    transition: top 0.2s;
+}
+
+.highlighted {
+    top: -10px;
+}
+
+.right21 {
+    padding: 80px 0px 20px 0px;
+    border-bottom: 2px solid #dcdcdc;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.right21:hover {
+    border-bottom: 2px solid #fff197;
+}
+
+.right21:active {
+    border-bottom: 2px solid #fff197;
+}
+
+.margin {
+    margin: 0 2% 2% 2%;
+
+}
+.nag1 {
+    color: #072def;
+    font-size: 20px;
+    font-family: "Lora", sans-serif;
+}
+
+
+
+.nag2 {
+    background-color: #fff197;
+    font-size: 44px;
+    font-family: "Lora", serif;
+}
+
+.nag3 {
+    font-size: 15px;
+    font-family: "Lora", sans-serif;
+}
+
+/* section intro
+------------------------------- */
+.nag21 {
+    background-color: #fff197;
+    font-size: 60px;
+    font-family: "Lora", serif;
+}
+
+/* section about
+------------------------------- */
+.margind{
+    margin-bottom: 70px;
+}
+
+.p-margin{
+    margin-bottom: 33px;
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: 300;
+    font-family: "Work Sans", sans-serif;
+    color: #222;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+}
+.h-padding{
+    font-family: "Lora", sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    margin-top: 0px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.section {
+    background: #fcfcfc;
+    min-height: 100px;
+}
+
+#sectionIntro {
+    padding-top: 200px;
+    background: url("photos/zdj profilowe.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-size: cover;
+    min-height: 642px;
+}
+
+
 
 #sectionPortfolio, #sectionContact, #sectionAbout {
     padding: 120px 0px;
@@ -63,7 +207,133 @@
     height: 100%;
     background-color: #fff197;
 }
+/* section resume
+------------------------------- */
 
+.expeP{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    font-family: "Work Sans", sans-serif;
+    color: #333;
+
+}
+
+.expeH{
+    font-family: "Lora", sans-serif;
+    font-size: 22px;
+    color: #000;
+
+}
+.expePS{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+    color: #072def;
+    position: relative;
+    top: 8px;
+}
+/* section portfolio
+------------------------------- */
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+.container-fluid.no-gutter {
+    padding: 0px;
+}
+
+.container-fluid.no-gutter .row [class*='col-']:not(:first-child),
+.container-fluid.no-gutter .row [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.item {
+    border: none;
+    width: 50%;
+    padding: 0 28px 28px 0;
+
+}
+
+.item img {
+    margin: 0 auto;
+
+}
+
+.isotope,
+.isotope .item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+}
+ul.listforgallery li {
+    display: inline-block;
+
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-weight: 400;;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+}
+
+
+
+/* section jurnal
+------------------------------- */
+
+.jurP {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    font-family: "Work Sans", sans-serif;
+    color: #777;
+}
+.jurH {
+    font-family: "Lora", sans-serif;
+    font-size: 26px;
+    color: #000;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.jurw {
+    max-width: 90%;
+}
+
+
+/* section contakt
+------------------------------- */
 .contactForm {
     position: relative;
     top: -25px;
@@ -108,6 +378,8 @@
     font-family: "Work Sans", sans-serif;
     color: #777;
 }
+
+
 
 input, textarea, select {
     background: transparent;
@@ -259,16 +531,6 @@ input.submit {
 
 
 
-.container-fluid.no-gutter {
-    padding: 0px;
-}
-
-.container-fluid.no-gutter .row [class*='col-']:not(:first-child),
-.container-fluid.no-gutter .row [class*='col-']:not(:last-child) {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -314,8 +576,6 @@ input.submit {
 }
 
 /* responsive media queries */
-
-
 
 .navbar li a {
     margin: 15px;
@@ -366,10 +626,28 @@ input.submit {
 .right21:active {
     border-bottom: 2px solid #fff197;
 }
+
 .margin {
     margin: 0 2% 2% 2%;
 
 }
+.margind{
+    margin-bottom: 70px;
+}
+.borderd {
+    margin-top:  70px;
+ }
+.p-margin{
+    margin-bottom: 33px;
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: 300;
+    font-family: "Work Sans", sans-serif;
+    color: #222;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+}
+
 @media (max-width: 768px) {
     .item {
         border: none;
@@ -377,24 +655,15 @@ input.submit {
         padding: 0 14px 14px 0;
 
     }
+
     .margin {
         margin: 0;
     }
-    #sectionIntro{
+
+    #sectionIntro {
         padding: 0px 0px;
     }
 }
 
-ul.listforgallery li {
-    display: inline-block;
-
-    margin: 0 8px;
-    text-transform: uppercase;
-    font-weight: 400;;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-    float: right;
-}
 
 
