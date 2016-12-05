@@ -5,21 +5,24 @@ $(document).ready(function () {
 
 
     offset = $('.navbar').outerHeight();
-    $('#navi li a[href^="#"]').click(function (event) {
+    $('#navi').find('li a[href^="#"]').click(function (event) {
 
         // Prevent from default action to intitiate
         event.preventDefault();
 
-        //remove active from all anchor and add it to the clicked anchor
-        $('#navi li a[href^="#"]').removeClass("current")
+        //remove cuurent class
+        $('.main-menu').find('a').each(function(){
+            $(this).removeClass('current');
+        });
+
         $(this).addClass('current');
-        document.getElementById("mySidenav").style.display = "none";
+        $('#mySidenav').css('display', 'none');
 
         // The id of the section we want to go to
         var anchorId = $(this).attr('href');
 
         // Our scroll target : the top position of the section that has the id referenced by our href
-        if(anchorId.length) {
+        if (anchorId.length) {
             var target = $(anchorId).offset().top;
         }
 
@@ -33,8 +36,8 @@ $(document).ready(function () {
 //check the pages when scroll event occurs
     $(window).scroll(function () {
         // Get the current vertical position of the scroll bar
-        position = $(this).scrollTop();
-        $('#navi li a[href^="#"]').each(function () {
+        var position = $(this).scrollTop();
+        $('#navi').find('li a[href^="#"]').each(function () {
             var anchorId = $(this).attr('href');
             if (anchorId.length) {
                 var target = $(anchorId).offset().top - offset;
@@ -42,7 +45,7 @@ $(document).ready(function () {
             // check if the document has crossed the page
             if (position >= target) {
                 //remove active from all anchor and add it to the clicked anchor
-                $('#navi li a[href^="#"]').removeClass("current")
+                $('#navi').find('li a').removeClass("current");
                 $(this).addClass('current');
             }
         })

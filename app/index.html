@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="bower_components/lity/dist/lity.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
     <link href="main.css" rel="stylesheet">
 
@@ -17,21 +19,25 @@
 <body>
 <div class="page-wrapper">
 
-    <div class="site-spinner"></div>
+    <div class="preloader">
+        <div class="site-spinner"></div>
+    </div>
 
 
     <header class="navbar navbar-default navbar-fixed-top">
         <div class="nav-container">
-            <div class="col-md-6">
-                <a href="index.html" class="site-logo">SHIN</a>
-            </div>
-            <div class="col-md-6">
-                <span class="menu-ham" onclick="openNav()">&#9776;</span>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html" class="site-logo">SHIN</a>
+                </div>
+                <div class="col-md-6">
+                    <span class="menu-ham" id="openNav">&#9776;</span>
+                </div>
             </div>
 
         </div>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
 
             <div class="dropdown-inner current" id="navi">
                 <ul class="main-menu mar-bot-2">
@@ -43,12 +49,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
-                <span class="inline text-bold">Fallow Me</span>
+                <span class="inline text-bold">Follow Me</span>
                 <div class="social inline">
-                    <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
-                    <a href="" class="social-icon"><i class="mdi mdi-twitter"></i> </a>
-                    <a href="" class="social-icon"><i class="mdi mdi-google-glass"></i> </a>
-                    <a href="" class="social-icon"><i class="mdi mdi-heart"></i> </a>
+                    <span class="social-icon"><i class="mdi mdi-facebook"></i> </span>
+                    <span class="social-icon"><i class="mdi mdi-twitter"></i> </span>
+                    <span class="social-icon"><i class="mdi mdi-google-glass"></i> </span>
+                    <span class="social-icon"><i class="mdi mdi-heart"></i> </span>
                 </div>
             </div>
         </div>
@@ -66,7 +72,7 @@
 
                         <div class="container">
 
-                            <h1>Hi! I'm Danilo</h1>
+                            <h1 class="mar-bottom-0">Hi! I'm Danilo</h1>
                             <h2>Designer &amp; Developer</h2>
                             <a href="#about" class="banner-icon"><i class="mdi mdi-arrow-down"></i> </a>
 
@@ -81,7 +87,7 @@
 
                         <div class="container">
 
-                            <h1>I Craft Digital Design</h1>
+                            <h1 class="mar-bottom-0">I Craft Digital Design</h1>
                             <h2>&amp; Website</h2>
                             <a href="#portfolio" class="banner-icon"><i class="mdi mdi-arrow-down"></i></a>
 
@@ -96,7 +102,7 @@
 
                         <div class="container">
 
-                            <h1>Pixel Perfect Developement</h1>
+                            <h1 class="mar-bottom-0">Pixel Perfect Developement</h1>
                             <h2>Lets Get Together</h2>
                             <a href="#contact" class="banner-icon"><i class="mdi mdi-arrow-down"></i></a>
 
@@ -329,7 +335,7 @@
     <section id="video" class="video-section pd-top-7 ">
         <div class="container pd-top-7 pd-bottom-7">
             <div class="mar-top-7 mar-bottom-7">
-                <a href="https://www.youtube.com/watch?v=uT-w9XTeN6I" class="html5lightbox video-section-link">
+                <a href="https://www.youtube.com/watch?v=uT-w9XTeN6I" data-lity class="video-section-link">
                     <i class="mdi mdi-play"></i>
                 </a>
                 <p class="pd-top-5 pd-bottom-3 video-section-text">
@@ -496,32 +502,35 @@
     <section class="pd-top-3 pd-bottom-7" id="quotation">
         <div class="container">
             <div class="row">
-                <div class="owl-carousel" id="owl-quote">
-                    <div class="qutation-inner">
-                        <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
-                        <p class="quote-text">
-                            " I got a dummy for Christmas and started teaching myself. I got books and records and
-                            sat in front of the practising. I did my first show in the third grade and just kept
-                            going. "
-                        </p>
-                        <div class="author-quote">John Danilo, Founder Shin Ltd</div>
-                    </div>
+                <div class="quote-container">
+                    <div class="qoute-carousel owl-carousel" id="owl-quote">
 
-                    <div class="qutation-inner">
-                        <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
-                        <p class="quote-text">
-                            " It's true, you can never eat a pet you name. And anyway, I did my first show in the
-                            third grade it would be like a ventriloquist eating his dummy. "
-                        </p>
-                        <div class="author-quote">John Danilo, Founder Shin Ltd</div>
-                    </div>
+                        <div class="qutation-inner">
+                            <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
+                            <p class="quote-text">
+                                " I got a dummy for Christmas and started teaching myself. I got books and records and
+                                sat in front of the practising. I did my first show in the third grade and just kept
+                                going. "
+                            </p>
+                            <div class="author-quote">John Danilo, Founder Shin Ltd</div>
+                        </div>
 
-                    <div class="qutation-inner">
-                        <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
-                        <p class="quote-text">
-                            " We're not leaving here without Buster, man. Leave no crash-test dummy behind! "
-                        </p>
-                        <div class="author-quote">John Danilo, Founder Shin Ltd</div>
+                        <div class="qutation-inner">
+                            <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
+                            <p class="quote-text">
+                                " It's true, you can never eat a pet you name. And anyway, I did my first show in the
+                                third grade it would be like a ventriloquist eating his dummy. "
+                            </p>
+                            <div class="author-quote">John Danilo, Founder Shin Ltd</div>
+                        </div>
+
+                        <div class="qutation-inner">
+                            <div class="quote-icon"><i class="mdi mdi-format-quote"></i></div>
+                            <p class="quote-text">
+                                " We're not leaving here without Buster, man. Leave no crash-test dummy behind! "
+                            </p>
+                            <div class="author-quote">John Danilo, Founder Shin Ltd</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -537,13 +546,13 @@
     </section>
 
 
-    <section id="contact" class="pd-top-7 pd-bottom-3">
+    <section id="contact" class="pd-top-7 pd-bottom-7">
         <div class="container">
-            <h1 class="title">Contact Me</h1>
-            <div class="row">
+            <h1 class="title pd-top-1 contact-title">Contact Me</h1>
+            <div class="row pd-top-1">
                 <div class="col-md-5 col-xs-12 contact-info">
                     <h4>Love to collaborate with creative people</h4>
-                    <h5 class="text-capitalize mar-bottom-1">My contact info</h5>
+                    <h5 class="text-capitalize mar-bottom-3">My contact info</h5>
 
                     <div class="col-md-6 col-sm-6 col-xs-12 contact-info">
                         <p><i class="mdi mdi-map-marker"></i> 502, DieSachbearbeiter</p>
@@ -557,12 +566,12 @@
                     </div>
 
 
-                    <div class="col-md-12 contact-info"><span class="inline text-bold">Fallow Me</span>
+                    <div class="col-md-12 contact-info"><span class="inline text-bold">Follow Me</span>
                         <div class="social inline">
-                            <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
-                            <a href="" class="social-icon"><i class="mdi mdi-twitter"></i> </a>
-                            <a href="" class="social-icon"><i class="mdi mdi-google-glass"></i> </a>
-                            <a href="" class="social-icon"><i class="mdi mdi-heart"></i> </a>
+                            <span class="social-icon"><i class="mdi mdi-facebook"></i> </span>
+                            <span class="social-icon"><i class="mdi mdi-twitter"></i> </span>
+                            <span class="social-icon"><i class="mdi mdi-google-glass"></i> </span>
+                            <span class="social-icon"><i class="mdi mdi-heart"></i> </span>
                         </div>
                     </div>
                 </div>
@@ -583,11 +592,12 @@
                             </div>
 
                             <div class="form-group col-sm-12 pd-top-1">
-                                <textarea placeholder="Messages" rows="5"></textarea>
+                                <textarea placeholder="Messages" rows="6"></textarea>
                             </div>
 
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-submit">Send Message</button>
+                                <button type="submit" class="btn btn-submit"><span
+                                        class="text-uppercase">Send Message</span></button>
                             </div>
                         </form>
                     </div>
@@ -606,35 +616,32 @@
 
                 <div class="col-md-offset-2 col-md-4 col-xs-12 col-xs-offset-0 text-right">
                     <div class="social inline">
-                        <a href="" class="social-icon"><i class="mdi mdi-facebook"></i> </a>
-                        <a href="" class="social-icon"><i class="mdi mdi-twitter"></i> </a>
-                        <a href="" class="social-icon"><i class="mdi mdi-google-glass"></i> </a>
-                        <a href="" class="social-icon"><i class="mdi mdi-heart"></i> </a>
+                        <span class="social-icon"><i class="mdi mdi-facebook"></i> </span>
+                        <span class="social-icon"><i class="mdi mdi-twitter"></i> </span>
+                        <span class="social-icon"><i class="mdi mdi-google-glass"></i> </span>
+                        <span class="social-icon"><i class="mdi mdi-heart"></i> </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
-
 
 </div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script src="assets/js/html5lightbox/html5lightbox.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/nav.js"></script>
 <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
 <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/google-maps.js"></script>
+<script src="bower_components/lity/dist/lity.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs4GxNxj5_SDppX2QE20FXgVUtLFKUQpQ&callback=initMap">
 
 </script>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/google-maps.js"></script>
 </body>
 </html>

@@ -4,21 +4,19 @@
 
 $(document).ready(function () {
 
-    $(".site-spinner").fadeOut("slow", function () {
+    $(".preloader").fadeOut('slow', function () {
         $(this).remove();
     });
 
-
     var change = $('.change');
-
     change.each(function(){
         var imgSrc = $(this).children().attr('src');
-        $(this).children("img").remove();
+        $(this).children('img').remove();
         $(this).css('background-image', 'url("'+imgSrc+'")');
     });
 
-
     $('#owl-main').owlCarousel({
+        animateOut: 'fadeOut',
         items: 1,
         margin: 0,
         dots: true,
@@ -30,9 +28,7 @@ $(document).ready(function () {
 
     });
 
-
-    $("#owl-work").owlCarousel({
-
+    $('#owl-work').owlCarousel({
         items: 1,
         margin: 0,
         nav: false,
@@ -41,21 +37,13 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 7000
 
-        // "singleItem:true" is a shortcut for:
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
-
     });
 
 
     var contMasonry = $('.masonry');
-
     contMasonry.imagesLoaded(function () {
         contMasonry.isotope({
-            itemSelector: ".grid-item",
+            itemSelector: '.grid-item',
             percentPosition: true,
             masonry: {
                 columnWidth: 0,
@@ -65,50 +53,31 @@ $(document).ready(function () {
     });
 
     $('.filter').on('click', '.categories', function (event) {
-
         event.preventDefault();
-        var filterObject = $(this).data("filter");
-        console.log(filterObject);
+        var filterObject = $(this).data('filter');
         contMasonry.isotope({
             filter: filterObject
         });
-
-        $('.filter a').removeClass('active');
+        $('.filter').find('a').removeClass('active');
         $(this).closest('a').addClass('active');
-
     });
 
     $('#owl-quote').owlCarousel({
         items: 1,
         margin: 0,
         nav: false,
-        dots: true,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 8000
-
+        autoHeight: true
     });
 
-
-
-});
-
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
-
-
-$(function () {
-
-    var $meters = $(".skillbar-progress");
+    var $meters = $('.skillbar-progress');
     var $section = $('#skills');
-
     function loadDaBars() {
         $meters.each(function () {
-            jQuery(this).find('.skillbar-bar').animate({
+            $(this).find('.skillbar-bar').animate({
                 width: jQuery(this).attr('data-percent')
-            }, 6000);
+            }, 1500);
         });
     }
 
@@ -122,21 +91,16 @@ $(function () {
         }
     });
 
+    $('#openNav').on('click', function () {
+        $('#mySidenav').css('display','block');
+    });
+
+    $('#closeNav').on('click', function(){
+        $('#mySidenav').css('display','none');
+    });
 });
 
 
-/*
-document.getElementById("carousel-example-generic").addEventListener("click", function (event) {
-    event.preventDefault()
-});*/
-
-function openNav() {
-    document.getElementById("mySidenav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.display = "none";
-}
-
-
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};

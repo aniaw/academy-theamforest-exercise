@@ -112,20 +112,43 @@ hr {
     overflow: hidden;
 }
 
+.navbar {
+    border: 0;
+}
+
 .title {
     margin-top: 12px;
     margin-bottom: 12px;
 }
-
-
-.site-spinner {
+.preloader{
     position: fixed;
-    left: 0px;
-    top: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
-    background: url('assets/page-loader/page-loader.gif') 50% 50% no-repeat rgb(249, 249, 249);
+    z-index: 9000;
+}
+
+.site-spinner {
+    display: block;
+    position: relative;
+    left: 50%;
+    top:50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #606060;
+    border-radius: 50%;
+    z-index:9500;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin  {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .nav-container {
@@ -142,6 +165,7 @@ hr {
     padding: 24px 35px 23px;
     z-index: 101;
     color: #606060;
+    margin-left: 15px;
 }
 
 .menu-ham {
@@ -150,6 +174,7 @@ hr {
     padding: 24px 35px 23px;
     font-size: 24px;
     color: #606060;
+    cursor: pointer;
 }
 
 .sidenav {
@@ -267,11 +292,12 @@ hr {
     color: #606060;
     display: inline-block;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     margin-top: 5px;
     margin-right: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
     -webkit-transition: color .3s;
     -moz-transition: color .3s;
     -o-transition: color .3s;
@@ -279,7 +305,7 @@ hr {
 }
 
 .social-icon i {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .social-icon:hover i{
@@ -320,6 +346,25 @@ hr {
     width: 100%;
 
 }
+
+#home .owl-carousel .owl-dots .owl-dot span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #606060;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: .6;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s
+}
+
+#home .owl-carousel .owl-dots .owl-dot.active span{
+    opacity: 1;
+}
+
 
 #home .owl-carousel .owl-nav {
     margin: 0;
@@ -618,7 +663,6 @@ hr {
 
 
 .video-section {
-    opacity: .5;
     width: 100%;
     background-size: cover;
     background-image: url("assets/img/video_bg.jpg");
@@ -627,7 +671,18 @@ hr {
     position: relative;
     z-index: 1;
     text-align: center;
+}
 
+
+.video-section:before {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: .6;
+    content: '';
 }
 
 .video-section-link {
@@ -642,14 +697,14 @@ hr {
 
 }
 
-.video-section-link i {
+.video-section-link i{
     font-size: 44px;
     line-height: 108px;
 }
 
 .video-section-link:hover {
     color: #999;
-    opacity: .7;
+    border-color: #999;
 }
 
 .video-section-text {
@@ -660,10 +715,30 @@ hr {
     width: 100%;
 }
 
-.owl-carousel .item img{
+#latest-work .owl-carousel .item img{
     display: block;
     width:100%;
     height: auto;
+}
+
+#owl-work.owl-carousel .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background: #606060;
+    border-color: transparent;
+    transition: all .3s ease;
+
+}
+
+#owl-work.owl-carousel .owl-dots .owl-dot.active span {
+    border-color: #606060;
+    background: #fff;
+    transform: scale(1.5);
 }
 
 .btn-work {
@@ -819,7 +894,7 @@ sup {
 
 
 .qutation-inner {
-    display: block;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -836,11 +911,49 @@ sup {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-
 }
 
 .qutation-inner .author-quote {
     margin-top: 20px;
+}
+
+
+.qoute-carousel {
+    display: block;
+}
+.qoute-carousel.owl-carousel .owl-dots{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-top: 15px
+}
+
+.qoute-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #606060;
+    border: 2px solid;
+    border-color: transparent;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+.qoute-carousel .owl-dots .owl-dot.active{
+    background: #fff;
+    border: 2px solid #606060;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4)
 }
 
 
@@ -853,9 +966,14 @@ sup {
 .contact-info {
     padding-left: 0;
     padding-right:0;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     height: auto;
     min-height:100%;
+}
+
+.contact-title {
+    margin-left: -15px;
 }
 
 .contact-info p {
@@ -863,6 +981,9 @@ sup {
     margin-bottom: 12px;
 }
 
+.form-group {
+    margin-bottom: 20px;
+}
 
 input, textarea {
     border: 0;
@@ -870,7 +991,16 @@ input, textarea {
     border-bottom: 2px solid #ededed;
     background-color: transparent;
     width: 100%;
-    padding-bottom: 7px;
+    padding: 8px 0 16px;
+    font-size: 13px;
+
+}
+
+input:focus, textarea:focus {
+    border-color: #77cde3;
+    color: #606060;
+    outline: 0;
+    box-shadow: none
 }
 
 
@@ -880,9 +1010,9 @@ input, textarea {
     border: 2px solid #ededed;
     border-radius: 0;
     background-color: #fff;
-    color: #999;
-    padding-left: 15px;
-    padding-right: 15px;
+    color: #606060;
+    padding: 10px 15px 10px 15px;
+    transition: all .4s ease;
 }
 
 .btn-submit:hover{
@@ -1219,7 +1349,7 @@ input, textarea {
 }
 
 .text-bold {
-    font-weight:bold;
+    font-weight:500;
 }
 
 .mar-bot-2 {
@@ -1246,6 +1376,9 @@ input, textarea {
 }
 .mar-top-7 {
     margin-top: 70px;
+}
+.mar-bottom-0 {
+    margin-bottom: 0;
 }
 .mar-bottom-1 {
     margin-bottom: 10px;
@@ -1289,6 +1422,10 @@ input, textarea {
 }
 .pd-top-7 {
     padding-top: 70px;
+}
+
+.pd-bottom-0 {
+    padding-bottom: 0;
 }
 .pd-bottom-1 {
     padding-bottom: 10px;
