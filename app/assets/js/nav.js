@@ -54,5 +54,4 @@ $(document).ready(function () {
         //set our scroll state after dom ready
         $(window).scroll();
     })
-
 });
